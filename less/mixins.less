@@ -1,1 +1,18 @@
 // Mixins Here
+
+.buttonStyling (@button-background, @button-font-color) {
+    background: @button-background;
+    color: @button-font-color;
+    border-radius: 10px;
+    padding: .8% 1.5%;
+
+    &:hover {
+        background: @button-font-color;
+        color: @button-background;
+    }
+}
+
+.justify (@justify) {
+    display: flex;
+    justify-content: (@justify);
+}

@@ -25,12 +25,21 @@
             .linksContainer {
                 display: flex;
                 justify-content: center;
+                width: 100%
+
+                @media @phone {
+                    justify-content: center;
+                }
         
                 .links {
-                    width: 30%;
+                    width: 80%;
                     display: flex;
                     justify-content: space-between;
                     padding-top: 1.5%;
+
+                    // @media @phone {
+                    //     width: 100%;
+                    // }
 
                         a {
                             text-decoration: none;
