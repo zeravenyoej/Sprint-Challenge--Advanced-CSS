@@ -162,27 +162,38 @@ p {
 }
 .navContainer {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   background: #F6F6F6;
   color: #454A59;
   border-bottom: 1px solid #F1F1F1;
-  padding: 3% 0;
+  padding: 1% 0;
 }
-.navContainer .textContainer {
-  width: 40%;
-  height: 50%;
+.navContainer .smallerNavContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 3%;
 }
-.navContainer .links {
-  width: 60%;
-  height: 40%;
+.navContainer .smallerNavContainer .textContainer {
+  display: flex;
+  justify-content: center;
+}
+.navContainer .smallerNavContainer .textContainer h1 {
+  font-size: 3.5rem;
+}
+.navContainer .smallerNavContainer .linksContainer {
+  display: flex;
+  justify-content: center;
+}
+.navContainer .smallerNavContainer .linksContainer .links {
+  width: 30%;
   display: flex;
   justify-content: space-between;
+  padding-top: 1.5%;
 }
-.navContainer .links a {
+.navContainer .smallerNavContainer .linksContainer .links a {
   text-decoration: none;
   color: black;
+  font-size: 1.8rem;
 }
 footer {
   color: #22283B;

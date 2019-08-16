@@ -1,29 +1,43 @@
 // Navigation code here
 .navContainer {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     background: @wild-sand;
     color: @nav-font;
     border-bottom: 1px solid @nav-border;
-    padding: 3% 0;
+    padding: 1% 0;
 
-    .textContainer {
-        width: 40%;
-        height: 50%;
-    }
+        .smallerNavContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 3%;
+        
 
-    .links {
-        width: 60%;
-        height: 40%;
-        display: flex;
-        justify-content: space-between;
+            .textContainer {
+                display: flex;
+                justify-content: center;
 
-            a {
-                text-decoration: none;
-                color: black;
+                h1 {
+                    font-size:3.5rem;
+                }
             }
-    }
 
+            .linksContainer {
+                display: flex;
+                justify-content: center;
+        
+                .links {
+                    width: 30%;
+                    display: flex;
+                    justify-content: space-between;
+                    padding-top: 1.5%;
+
+                        a {
+                            text-decoration: none;
+                            color: black;
+                            font-size: 1.8rem;
+                        }
+                }
+            }
+        }
 }
