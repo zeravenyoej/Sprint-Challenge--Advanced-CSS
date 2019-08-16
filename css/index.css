@@ -160,6 +160,30 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.navContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #F6F6F6;
+  color: #454A59;
+  border-bottom: 1px solid #F1F1F1;
+  padding: 3% 0;
+}
+.navContainer .textContainer {
+  width: 40%;
+  height: 50%;
+}
+.navContainer .links {
+  width: 60%;
+  height: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+.navContainer .links a {
+  text-decoration: none;
+  color: black;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
