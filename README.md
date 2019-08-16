@@ -35,13 +35,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+It has to do with how neatly and effectively the content on the screen adjusts as the width and height of the site shrinks/expands. A fully responsive website will have its elements shrink and expand proportionally. An adaptive website is similar, but it won't respond as gracefully. It uses fewer breakpoints. 
+
 2. Describe what it means to be mobile first vs desktop first.
+
+To be mobile first means the code was designed for the size of a mobile screen. Media queries are used to adjust the elements at minimum widths. Desktop first is the opposite, in that everything scales down via media queries.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+It provides a reference point for the rem units, which are relative (and not absolute). If the html is set to font-size: 62.5%, and rem unit will multiply 16px by its given amount.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing is a means of better orgnizing styling files (in our case, with LESS). Additionally, it allows us to keep our code dry via things (functions?) like mixins. 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I do find nesting and separating the less files by element does enhance readability. I wouldn't say it gives me trouble exactly, but I have room for improvement making the best use of mixins. I don't think I'm at a point yet where I can confidently anticipate what variables/mixins I'll use.  
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
