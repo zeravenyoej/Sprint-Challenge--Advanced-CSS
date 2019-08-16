@@ -166,12 +166,14 @@ p {
   color: #454A59;
   border-bottom: 1px solid #F1F1F1;
   padding: 1% 0;
+  display: flex;
+  justify-content: center;
 }
 .navContainer .smallerNavContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   padding: 0 3%;
+  width: 75%;
 }
 .navContainer .smallerNavContainer .textContainer {
   display: flex;
@@ -183,9 +185,10 @@ p {
 .navContainer .smallerNavContainer .linksContainer {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 .navContainer .smallerNavContainer .linksContainer .links {
-  width: 30%;
+  width: 40%;
   display: flex;
   justify-content: space-between;
   padding-top: 1.5%;
@@ -193,7 +196,14 @@ p {
 .navContainer .smallerNavContainer .linksContainer .links a {
   text-decoration: none;
   color: black;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .navContainer .smallerNavContainer .linksContainer .links {
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+  }
 }
 footer {
   color: #22283B;
@@ -256,12 +266,57 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text button {
+  background: #22283A;
+  color: white;
+  border-radius: 6px;
+  padding: 2% 7%;
+  font-size: 1.5rem;
+}
+.home .walk .walk-text button:hover {
+  background: white;
+  color: #22283A;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-img img {
+.home .walk img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .space-images {
+    width: 100%;
+  }
+  .home .space-images .blast {
+    width: 100%;
+  }
+  .home .space-images .launch,
+  .home .space-images .sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 20px 12.25px;
+  }
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 0;
+  }
+  .home .walk .walk-img img {
+    width: 100%;
+  }
+  .home .walk .walk-text {
+    width: 100%;
+    padding-top: 5%;
+  }
+  .home .walk .walk-text button {
+    width: 100%;
+    padding: 4% 0;
+  }
 }

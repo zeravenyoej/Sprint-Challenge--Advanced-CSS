@@ -5,47 +5,55 @@
     color: @nav-font;
     border-bottom: 1px solid @nav-border;
     padding: 1% 0;
+    .justify(center);
 
-        .smallerNavContainer {
-            display: flex;
-            flex-direction: column;
-            padding: 0 3%;
-        
+    .smallerNavContainer {
 
-            .textContainer {
-                display: flex;
-                justify-content: center;
+        .direction(column);
+        padding: 0 3%;
+        width: 75%;
+    
+        .textContainer {
+            .justify(center);
 
-                h1 {
-                    font-size:3.5rem;
-                }
+            h1 {
+                font-size:3.5rem;
             }
+        }
 
-            .linksContainer {
-                display: flex;
-                justify-content: center;
-                width: 100%;
+        .linksContainer {
+            .justify(center);
+            width: 100%;
 
-                @media @phone {
-                    width: 80%;
-                }
-        
-                .links {
-                    width: 80%;
-                    display: flex;
-                    justify-content: space-between;
-                    padding-top: 1.5%;
+            .links {
+                width: 40%;
+                .justify(space-between);
+                padding-top: 1.5%;
 
-                    // @media @phone {
-                    //     width: 100%;
-                    // }
-
-                        a {
-                            text-decoration: none;
-                            color: black;
-                            font-size: 1.8rem;
-                        }
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 1.6rem;
                 }
             }
         }
+    }
+}
+
+//************** MEDIA QUERIES *****************************////
+
+
+@media @phone {
+    .navContainer {
+        .smallerNavContainer {
+            .linksContainer{
+                .links {
+                    width: 100%;
+                    padding-top: 5%;
+                    padding-bottom: 2%;
+                }
+            }
+        }
+    }
+        
 }
