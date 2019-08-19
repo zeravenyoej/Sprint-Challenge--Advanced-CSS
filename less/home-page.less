@@ -1,8 +1,21 @@
 // Home Content
 
+
 .home {
 
+  // ************************ MAIN PICTURE PLUS LIFT OFF***************
+  
   .intro {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+      .imgContainer {
+          img {
+            width: 100%;
+            border-radius: 10px;
+          }
+      }
 
     h2 {
       padding: 15px;
@@ -11,8 +24,9 @@
     p {
       padding:0 15px;
     }
-  
   }
+
+  // ***************************** THREE IMAGES ****************************
 
   .space-images {
     display: flex;
@@ -24,8 +38,12 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      }
     }
-  }
+  
+
+
+  // ***************************CAN WE VISIT TEXT **********************************
 
   .visit-planets {
     padding: 15px;
@@ -38,6 +56,8 @@
       margin-top: 13px;
     }
   }
+
+  // ****************************** LETS GO FOR A WALK *****************************
 
   .walk {
     margin-top: 60px;
@@ -57,13 +77,15 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      button {
+        .buttonStyling(@button-background, @button-font-color);
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      }
       
       img {
         width: 100%;
@@ -71,5 +93,52 @@
         border-radius: 10px;
       }
     }
+
+  //***************************** MEDIA QUERIES **************************************/
+  
+
+  @media @phone {
+    .space-images{
+      width: 100%;
+
+      .blast {
+        width: 100%;
+      }
+
+      .launch, .sky {
+        display: none;
+      }
+    }
   }
-}// home
+
+    @media @phone {
+      .walk {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 20px 12.25px;
+
+        .walk-img {
+          width: 100%;
+          margin: 0;
+
+          img {
+            width: 100%;
+          }    
+        }
+
+        .walk-text {
+          width:100%;
+          padding-top: 5%;
+
+          button {
+            width: 100%;
+            // padding-top: 4%;
+            padding: 4% 0;
+          }
+
+        }
+
+    }
+  }
+
+}
